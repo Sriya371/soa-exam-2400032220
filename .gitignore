@@ -1,0 +1,6 @@
+.metadata/
+target/
+bin/
+.setting/
+.classpath
+.project
