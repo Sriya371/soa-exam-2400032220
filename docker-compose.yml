@@ -1,0 +1,21 @@
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: sriya371/docker-backend-2400032220:latest
+    container_name: nutrition-backend
+    ports:
+      - "8081:8081"
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: sriya371/docker-frontend-2400032220:latest
+    container_name: nutrition-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
