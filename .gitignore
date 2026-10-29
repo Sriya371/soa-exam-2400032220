@@ -1,6 +1,14 @@
+# Eclipse workspace metadata
 .metadata/
-target/
-bin/
-.setting/
-.classpath
-.project
+**/.metadata/
+
+# Maven build output
+**/target/
+
+# Node.js dependencies
+**/node_modules/
+
+# Environment files and secrets
+.env
+**/.env
+**/dist/
